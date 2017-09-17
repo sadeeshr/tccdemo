@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456483954978647D73C01CD8 /* Pods_champcoin_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */; };
+		C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E5AA91F60C5F500348A51 /* CcApi.swift */; };
+		C63C107E1F665B1C00238D80 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C63C107D1F665B1C00238D80 /* logo.png */; };
+		C63C10801F6666EA00238D80 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C107F1F6666EA00238D80 /* MainView.swift */; };
+		C63C10821F66670A00238D80 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C10811F66670A00238D80 /* LoginView.swift */; };
+		C63C10841F668ECD00238D80 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C10831F668ECD00238D80 /* AppNavigationController.swift */; };
+		C6C6A59D1F5A525500FDF3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6A59C1F5A525500FDF3E4 /* AppDelegate.swift */; };
+		C6C6A59F1F5A525500FDF3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6A59E1F5A525500FDF3E4 /* ViewController.swift */; };
+		C6C6A5A21F5A525600FDF3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C6A5A01F5A525600FDF3E4 /* Main.storyboard */; };
+		C6C6A5A41F5A525600FDF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C6A5A31F5A525600FDF3E4 /* Assets.xcassets */; };
+		C6C6A5A71F5A525600FDF3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C6A5A51F5A525600FDF3E4 /* LaunchScreen.storyboard */; };
+		C6DA35F51F68E0DF00E63F39 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA35F31F68E0DF00E63F39 /* DashboardCell.swift */; };
+		C6DDD17B1F67F1050082F690 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DDD17A1F67F1050082F690 /* DashboardTableViewController.swift */; };
+		C6ED26CC1F66CDC7006A4D59 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED26CB1F66CDC7006A4D59 /* HomeTab.swift */; };
+		C6FAFB171F67DDA000E418EC /* dashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FAFB161F67DDA000E418EC /* dashBoard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_champcoin_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD939E0D9CC46AC42714DEE /* Pods-champcoin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-champcoin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo.release.xcconfig"; sourceTree = "<group>"; };
+		C60E5AA91F60C5F500348A51 /* CcApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CcApi.swift; sourceTree = "<group>"; };
+		C63C107D1F665B1C00238D80 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C63C107F1F6666EA00238D80 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C63C10811F66670A00238D80 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C63C10831F668ECD00238D80 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		C6C6A5991F5A525500FDF3E4 /* champcoin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = champcoin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C6A59C1F5A525500FDF3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6C6A59E1F5A525500FDF3E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6C6A5A11F5A525600FDF3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6C6A5A31F5A525600FDF3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6C6A5A61F5A525600FDF3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6C6A5A81F5A525600FDF3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DA35F31F68E0DF00E63F39 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		C6DDD17A1F67F1050082F690 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
+		C6ED26CB1F66CDC7006A4D59 /* HomeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		C6FAFB161F67DDA000E418EC /* dashBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashBoard.swift; sourceTree = "<group>"; };
+		EAC81423E9CF7547DC25B30D /* Pods-champcoin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-champcoin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6C6A5961F5A525500FDF3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456483954978647D73C01CD8 /* Pods_champcoin_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6C6A5901F5A525400FDF3E4 = {
+			isa = PBXGroup;
+			children = (
+				C6C6A59B1F5A525500FDF3E4 /* champcoin_demo */,
+				C6C6A59A1F5A525500FDF3E4 /* Products */,
+				E825C2CB6C6051A794F9E283 /* Pods */,
+				E6058F5C32B8D8EACE24D56B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6C6A59A1F5A525500FDF3E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6C6A5991F5A525500FDF3E4 /* champcoin_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6C6A59B1F5A525500FDF3E4 /* champcoin_demo */ = {
+			isa = PBXGroup;
+			children = (
+				C6C6A59C1F5A525500FDF3E4 /* AppDelegate.swift */,
+				C6C6A59E1F5A525500FDF3E4 /* ViewController.swift */,
+				C63C107F1F6666EA00238D80 /* MainView.swift */,
+				C63C10811F66670A00238D80 /* LoginView.swift */,
+				C6FAFB161F67DDA000E418EC /* dashBoard.swift */,
+				C6DDD17A1F67F1050082F690 /* DashboardTableViewController.swift */,
+				C6DA35F31F68E0DF00E63F39 /* DashboardCell.swift */,
+				C6ED26CB1F66CDC7006A4D59 /* HomeTab.swift */,
+				C63C10831F668ECD00238D80 /* AppNavigationController.swift */,
+				C60E5AA91F60C5F500348A51 /* CcApi.swift */,
+				C6C6A5A01F5A525600FDF3E4 /* Main.storyboard */,
+				C6C6A5A31F5A525600FDF3E4 /* Assets.xcassets */,
+				C6C6A5A51F5A525600FDF3E4 /* LaunchScreen.storyboard */,
+				C6C6A5A81F5A525600FDF3E4 /* Info.plist */,
+				C63C107D1F665B1C00238D80 /* logo.png */,
+			);
+			path = champcoin_demo;
+			sourceTree = "<group>";
+		};
+		E6058F5C32B8D8EACE24D56B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E825C2CB6C6051A794F9E283 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAC81423E9CF7547DC25B30D /* Pods-champcoin_demo.debug.xcconfig */,
+				6FD939E0D9CC46AC42714DEE /* Pods-champcoin_demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6C6A5981F5A525500FDF3E4 /* champcoin_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6C6A5AB1F5A525600FDF3E4 /* Build configuration list for PBXNativeTarget "champcoin_demo" */;
+			buildPhases = (
+				EDF0DD9D096F12AE3F12D038 /* [CP] Check Pods Manifest.lock */,
+				C6C6A5951F5A525500FDF3E4 /* Sources */,
+				C6C6A5961F5A525500FDF3E4 /* Frameworks */,
+				C6C6A5971F5A525500FDF3E4 /* Resources */,
+				002D0EA197D38BB85A57A636 /* [CP] Embed Pods Frameworks */,
+				18FB85666F7F5CA99D882D38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = champcoin_demo;
+			productName = champcoin_demo;
+			productReference = C6C6A5991F5A525500FDF3E4 /* champcoin_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6C6A5911F5A525400FDF3E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Voip Helper";
+				TargetAttributes = {
+					C6C6A5981F5A525500FDF3E4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AG5EGGM7F3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C6C6A5941F5A525400FDF3E4 /* Build configuration list for PBXProject "champcoin_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6C6A5901F5A525400FDF3E4;
+			productRefGroup = C6C6A59A1F5A525500FDF3E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6C6A5981F5A525500FDF3E4 /* champcoin_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6C6A5971F5A525500FDF3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63C107E1F665B1C00238D80 /* logo.png in Resources */,
+				C6C6A5A71F5A525600FDF3E4 /* LaunchScreen.storyboard in Resources */,
+				C6C6A5A41F5A525600FDF3E4 /* Assets.xcassets in Resources */,
+				C6C6A5A21F5A525600FDF3E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		002D0EA197D38BB85A57A636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/PasswordTextField/PasswordTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PasswordTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18FB85666F7F5CA99D882D38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF0DD9D096F12AE3F12D038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-champcoin_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6C6A5951F5A525500FDF3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6DA35F51F68E0DF00E63F39 /* DashboardCell.swift in Sources */,
+				C6C6A59F1F5A525500FDF3E4 /* ViewController.swift in Sources */,
+				C63C10801F6666EA00238D80 /* MainView.swift in Sources */,
+				C6FAFB171F67DDA000E418EC /* dashBoard.swift in Sources */,
+				C63C10821F66670A00238D80 /* LoginView.swift in Sources */,
+				C63C10841F668ECD00238D80 /* AppNavigationController.swift in Sources */,
+				C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */,
+				C6ED26CC1F66CDC7006A4D59 /* HomeTab.swift in Sources */,
+				C6DDD17B1F67F1050082F690 /* DashboardTableViewController.swift in Sources */,
+				C6C6A59D1F5A525500FDF3E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6C6A5A01F5A525600FDF3E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6C6A5A11F5A525600FDF3E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6C6A5A51F5A525600FDF3E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6C6A5A61F5A525600FDF3E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6C6A5A91F5A525600FDF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6C6A5AA1F5A525600FDF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6C6A5AC1F5A525600FDF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC81423E9CF7547DC25B30D /* Pods-champcoin_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AG5EGGM7F3;
+				INFOPLIST_FILE = champcoin_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sadeesh.champcoin-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C6C6A5AD1F5A525600FDF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD939E0D9CC46AC42714DEE /* Pods-champcoin_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AG5EGGM7F3;
+				INFOPLIST_FILE = champcoin_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sadeesh.champcoin-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6C6A5941F5A525400FDF3E4 /* Build configuration list for PBXProject "champcoin_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6C6A5A91F5A525600FDF3E4 /* Debug */,
+				C6C6A5AA1F5A525600FDF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6C6A5AB1F5A525600FDF3E4 /* Build configuration list for PBXNativeTarget "champcoin_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6C6A5AC1F5A525600FDF3E4 /* Debug */,
+				C6C6A5AD1F5A525600FDF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6C6A5911F5A525400FDF3E4 /* Project object */;
+}
