@@ -73,7 +73,7 @@ class LoginView: UIViewController {
             (response) in
             
                 print(response)
-//            return "yes"
+
 //            self.apiLoginResponseHandler(response: "yes")
             
         }
