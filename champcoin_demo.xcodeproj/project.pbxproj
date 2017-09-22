@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		456483954978647D73C01CD8 /* Pods_champcoin_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */; };
+		B91351A81F751021009BE51E /* ForgotpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91351A71F751020009BE51E /* ForgotpasswordView.swift */; };
+		B91351AA1F7539BD009BE51E /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91351A91F7539BD009BE51E /* NewAccountView.swift */; };
 		C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E5AA91F60C5F500348A51 /* CcApi.swift */; };
 		C63C107E1F665B1C00238D80 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C63C107D1F665B1C00238D80 /* logo.png */; };
 		C63C10801F6666EA00238D80 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C107F1F6666EA00238D80 /* MainView.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_champcoin_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD939E0D9CC46AC42714DEE /* Pods-champcoin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-champcoin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo.release.xcconfig"; sourceTree = "<group>"; };
+		B91351A71F751020009BE51E /* ForgotpasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotpasswordView.swift; sourceTree = "<group>"; };
+		B91351A91F7539BD009BE51E /* NewAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
 		C60E5AA91F60C5F500348A51 /* CcApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CcApi.swift; sourceTree = "<group>"; };
 		C63C107D1F665B1C00238D80 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		C63C107F1F6666EA00238D80 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				C6C6A5A51F5A525600FDF3E4 /* LaunchScreen.storyboard */,
 				C6C6A5A81F5A525600FDF3E4 /* Info.plist */,
 				C63C107D1F665B1C00238D80 /* logo.png */,
+				B91351A71F751020009BE51E /* ForgotpasswordView.swift */,
+				B91351A91F7539BD009BE51E /* NewAccountView.swift */,
 			);
 			path = champcoin_demo;
 			sourceTree = "<group>";
@@ -259,9 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6DA35F51F68E0DF00E63F39 /* DashboardCell.swift in Sources */,
+				B91351AA1F7539BD009BE51E /* NewAccountView.swift in Sources */,
 				C6C6A59F1F5A525500FDF3E4 /* ViewController.swift in Sources */,
 				C63C10801F6666EA00238D80 /* MainView.swift in Sources */,
 				C6FAFB171F67DDA000E418EC /* dashBoard.swift in Sources */,
+				B91351A81F751021009BE51E /* ForgotpasswordView.swift in Sources */,
 				C63C10821F66670A00238D80 /* LoginView.swift in Sources */,
 				C63C10841F668ECD00238D80 /* AppNavigationController.swift in Sources */,
 				C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */,
