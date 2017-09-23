@@ -68,6 +68,10 @@ class MainView: UIViewController {
     }
     
     @IBAction func goRegister(_ sender: Any) {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationController?.navigationBar.backgroundColor = Color.clear
+        
+        performSegue(withIdentifier: "goNewAccount", sender: nil)
     }
     
     @IBAction func goTerms(_ sender: Any) {

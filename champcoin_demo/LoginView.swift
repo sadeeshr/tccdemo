@@ -55,6 +55,10 @@ class LoginView: UIViewController {
         performSegue(withIdentifier: "goHome", sender: nil)
     }
     
+    @IBAction func goForgotPassword(_ sender: Any) {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        performSegue(withIdentifier: "goHelpPassword", sender: nil)
+    }
     func apiLogin() {
         
         let userid = self.userIdT.text;
@@ -73,7 +77,7 @@ class LoginView: UIViewController {
             (response) in
             
                 print(response)
-//            return "yes"
+
 //            self.apiLoginResponseHandler(response: "yes")
             
         }
