@@ -61,6 +61,17 @@ class NewAccountView: UIViewController {
         
     }
     @IBAction func submit(_ sender: Any) {
+        let request = "method=registeruser&loginid=makw4224193@gmail.com&firstname=Hukuingh Makwana&lastname=Hukuingh Makwana&gender=M&dob=1975-05-04&country=98&mobile=822499®isterby=4224193&image=nnnn&devicename=samsungSM-J200G&uniqueid=359268072214059&emailid=makwan4224193@gmail.com&password=9516&address=abc&city=chich&state=Madhay Pradesh&pincode=1234&tpassword=95165&ifroot=N&devicekey=fwKWkdkeFPU:APA91bFJYGLt_rKrSYIXnCY2rNurazPQm5qPdajLui07hPTSkutcEyEtNqvpyAghioKzsasr6LOhFswpGB8zlgVrU_Yqw6XmlSvyWa8orMctqCp8e0L7nQd5qRLWSY6-CWHczIAyQash";
+        
+        let ccApi = CcApi()
+        ccApi.ccPost(data: request) {
+            (response) in
+            
+            print("Register Response from server\(response)")
+            
+            
+        }
+
         
     }
     /*
