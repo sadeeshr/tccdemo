@@ -109,7 +109,7 @@ open class SearchBar: Bar {
     open var placeholder: String? {
 		didSet {
 			if let v = placeholder {
-				textField.attributedPlaceholder = NSAttributedString(string: v, attributes: [NSForegroundColorAttributeName: placeholderColor])
+				textField.attributedPlaceholder = NSAttributedString(string: v, attributes: [.foregroundColor: placeholderColor])
 			}
 		}
 	}
@@ -119,7 +119,7 @@ open class SearchBar: Bar {
     open var placeholderColor = Color.darkText.others {
 		didSet {
 			if let v = placeholder {
-				textField.attributedPlaceholder = NSAttributedString(string: v, attributes: [NSForegroundColorAttributeName: placeholderColor])
+				textField.attributedPlaceholder = NSAttributedString(string: v, attributes: [.foregroundColor: placeholderColor])
 			}
 		}
 	}
@@ -216,11 +216,11 @@ fileprivate extension SearchBar {
         textField.font = RobotoFont.regular(with: 17)
         textField.backgroundColor = Color.clear
         textField.clearButtonMode = .whileEditing
+        textField.addTarget(self, action: #selector(handleEditingChanged(textField:)), for: .editingChanged)
         tintColor = placeholderColor
         textColor = Color.darkText.primary
         placeholder = "Search"
         contentView.addSubview(textField)
-        textField.addTarget(self, action: #selector(handleEditingChanged(textField:)), for: .editingChanged)
     }
     
     /// Prepares the clearButton.

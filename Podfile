@@ -1,12 +1,12 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+#platform :ios, '8.0'
 
 target 'champcoin_demo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for champcoin_demo
-   pod 'CryptoSwift'
+   pod 'CryptoSwift', '0.6.9'
 #    pod 'RNCryptor', '~> 5.0'
 #    pod 'AES256CBC'
     pod 'Alamofire', '~> 4.4'
@@ -15,6 +15,8 @@ target 'champcoin_demo' do
     pod 'PasswordTextField'
     pod 'SlideMenuControllerSwift'
     pod 'SwiftyJSON'
+    
+    
 
 plugin 'cocoapods-wholemodule'
 end

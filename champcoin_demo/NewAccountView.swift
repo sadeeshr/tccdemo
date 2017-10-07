@@ -61,19 +61,71 @@ class NewAccountView: UIViewController {
         
     }
     @IBAction func submit(_ sender: Any) {
-        let request = "method=registeruser&loginid=makw4224193@gmail.com&firstname=Hukuingh Makwana&lastname=Hukuingh Makwana&gender=M&dob=1975-05-04&country=98&mobile=822499®isterby=4224193&image=nnnn&devicename=samsungSM-J200G&uniqueid=359268072214059&emailid=makwan4224193@gmail.com&password=9516&address=abc&city=chich&state=Madhay Pradesh&pincode=1234&tpassword=95165&ifroot=N&devicekey=fwKWkdkeFPU:APA91bFJYGLt_rKrSYIXnCY2rNurazPQm5qPdajLui07hPTSkutcEyEtNqvpyAghioKzsasr6LOhFswpGB8zlgVrU_Yqw6XmlSvyWa8orMctqCp8e0L7nQd5qRLWSY6-CWHczIAyQash";
         
-        let ccApi = CcApi()
-        ccApi.ccPost(data: request) {
-            (response) in
+        let usr_name = unameT.text
+        let usr_mail = umailidT.text
+        let usr_password = upwdT.text
+        let usr_confirmpassword = uconfirmpwdT.text
+        let usr_DOB = dobB.text
+        let usr_mobno = umobT.text
+        var usr_referral = ureferalidT.text
+        let usr_country = ucountryT.text
+        let usr_state = ustateT.text
+        let usr_city = ucityT.text
+        
+        if (usr_name?.isEmpty)! {
+            self.showalert("Error!", "User Name is Empty")
+        }else if (usr_mail?.isEmpty)! && !isValidEmail(mailid: usr_mail!){
+            self.showalert("Error!", "Invalid User Mail ID")
+        }else if (usr_password?.isEmpty)!{
+            self.showalert("Error!", "Invalid Password")
+        }else if ((usr_confirmpassword?.isEmpty)! || usr_password != usr_confirmpassword){
+            self.showalert("Error!", "Password Mismatch")
+        }else if (usr_DOB?.isEmpty)!{
+            self.showalert("Error!", "Please Enter Valid DOB")
+        }else if (usr_mobno?.isEmpty)!{
+            self.showalert("Error!", "Please Enter Valid Mobile Number")
+        }else if (usr_country?.isEmpty)!{
+            self.showalert("Error!", "Select Valid Country Name")
+        }else if (usr_state?.isEmpty)!{
+            self.showalert("Error!", "Please Enter Valid State Name")
+        }else if (usr_city?.isEmpty)!{
+            self.showalert("Error!", "Please Enter Valid City Name")
+        }else{
+            if (usr_referral?.isEmpty)! {
+                usr_referral = "4224193"
+            }
             
-            print("Register Response from server\(response)")
+            let request = "method=registeruser&loginid=\(usr_mail!)&firstname=\(usr_name!)&lastname=\(usr_name!)&gender=M&dob=\(usr_DOB!)&country=98&mobile=\(usr_mobno!)&registerby=\(usr_referral!)&image=nnnn&devicename=samsungSM-J200G&uniqueid=359268072214059&emailid=\(usr_mail!)&password=\(usr_confirmpassword!)&address=abc&city=\(usr_city!)&state=\(usr_state!)&pincode=1234&tpassword=\(usr_confirmpassword!)&ifroot=N&devicekey=fwKWkdkeFPU:APA91bFJYGLt_rKrSYIXnCY2rNurazPQm5qPdajLui07hPTSkutcEyEtNqvpyAghioKzsasr6LOhFswpGB8zlgVrU_Yqw6XmlSvyWa8orMctqCp8e0L7nQd5qRLWSY6-CWHczIAyQash";
             
-            
-        }
+            let ccApi = CcApi()
+            ccApi.ccPost(data: request) {
+                (response) in
+                
+                print("Register Response from server\(response)")
+                
+                
+            }
 
+        }
+        
+        
         
     }
+    func showalert(_ title: String, _ message: String) -> Void {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    func isValidEmail(mailid:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: mailid)
+    }
+    
     /*
     // MARK: - Navigation
 
