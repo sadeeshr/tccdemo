@@ -1,9 +1,13 @@
 PODS:
   - Alamofire (4.5.1)
-  - CryptoSwift (0.6.9)
-  - Material (2.10.4):
-    - Material/Core (= 2.10.4)
-  - Material/Core (2.10.4)
+  - CryptoSwift (0.7.2)
+  - Material (2.11.4):
+    - Material/Core (= 2.11.4)
+  - Material/Core (2.11.4):
+    - Motion (~> 1.2.0)
+  - Motion (1.2.2):
+    - Motion/Core (= 1.2.2)
+  - Motion/Core (1.2.2)
   - PasswordTextField (1.0.4)
   - SlideMenuControllerSwift (3.0.2)
   - SwiftIcons (1.5.1)
@@ -11,7 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
-  - CryptoSwift (= 0.6.9)
+  - CryptoSwift
   - Material (~> 2.0)
   - PasswordTextField
   - SlideMenuControllerSwift
@@ -20,13 +24,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
-  Material: b00499e2c68738173cc8a460057d084ae33828fa
+  CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  Material: a1e1ec7789ffab391f8179047926f1736865eb7e
+  Motion: 532cc6bb5d6777c58a20f71c26c5825173017f60
   PasswordTextField: 1fccb24dd769cfc963f1f60cb9fece692ad40530
   SlideMenuControllerSwift: 16001e1fd9963fd089fa6c91dbe18d4c148f0ce9
   SwiftIcons: 287593643898af5a9ef16be4b1f9cf91a436cbc7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 52ee74ed049f723dee4b296b14459cebd31d9b2a
+PODFILE CHECKSUM: 0005a8243a1765225f0b68074ad9758bb15a165b
 
 COCOAPODS: 1.1.1

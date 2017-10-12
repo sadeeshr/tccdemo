@@ -3,20 +3,33 @@
 
 target 'champcoin_demo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  source 'https://github.com/CocoaPods/Specs.git'
+  platform :ios, '8.0'
   use_frameworks!
 
-  # Pods for champcoin_demo
-   pod 'CryptoSwift', '0.6.9'
-#    pod 'RNCryptor', '~> 5.0'
-#    pod 'AES256CBC'
+    pod 'CryptoSwift'
     pod 'Alamofire', '~> 4.4'
-    pod 'Material', '~> 2.0'
+
     pod 'SwiftIcons', '~> 1.5.1'
     pod 'PasswordTextField'
     pod 'SlideMenuControllerSwift'
     pod 'SwiftyJSON'
-    
-    
+    pod 'Material', '~> 2.0'
 
-plugin 'cocoapods-wholemodule'
+
+
+    plugin 'cocoapods-wholemodule'
+
+swift4pods = ['Material']
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if swift4pods.include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+    end
+end
+
 end

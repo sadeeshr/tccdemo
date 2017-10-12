@@ -114,7 +114,9 @@ class CcApi {
 //            print(decString)
            
             let ivValue: Array<UInt8> = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
-                let aes = try AES(key: decKey, iv: String(bytes: ivValue, encoding: .utf8)!, blockMode: .CBC, padding: PKCS7()) // aes128
+            //mani changed the line to below ---->    let aes = try AES(key: decKey, iv: String(bytes: ivValue, encoding: .utf8)!, blockMode: .CBC, padding: PKCS7()) // aes128
+            
+            let aes = try AES(key: decKey, iv: String(bytes: ivValue, encoding: .utf8)!, blockMode: .CBC, padding: .pkcs7) // aes128
             // Base64
             let responseDecoded: String = try decString.decryptBase64ToString(cipher: aes)
 //            print("response base 64 decoded: ", responseDecoded)

@@ -21,9 +21,11 @@ class DashboardCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
 //        stateImage.layer.borderWidth = 1
-        stateImage.masksToBounds = false
+       // mani commenting this line ---> stateImage.masksToBounds = false
 //        stateImage.borderColor = UIColor.black
-        stateImage.cornerRadius = stateImage.frame.height/2
+       
+        
+      // mani commenting this line --->  stateImage.cornerRadius = stateImage.frame.height/2
         stateImage.clipsToBounds = true
     }
 
