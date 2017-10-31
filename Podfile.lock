@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.1)
+  - APESuperHUD (1.1.2)
   - CryptoSwift (0.7.2)
   - Material (2.11.4):
     - Material/Core (= 2.11.4)
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - APESuperHUD (= 1.1.2)
   - CryptoSwift
   - Material (~> 2.0)
   - PasswordTextField
@@ -24,6 +26,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  APESuperHUD: 9c7ea17cea21b4a9212f1c43810b0c8b9ee585a6
   CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
   Material: a1e1ec7789ffab391f8179047926f1736865eb7e
   Motion: 532cc6bb5d6777c58a20f71c26c5825173017f60
@@ -32,6 +35,6 @@ SPEC CHECKSUMS:
   SwiftIcons: 287593643898af5a9ef16be4b1f9cf91a436cbc7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 0005a8243a1765225f0b68074ad9758bb15a165b
+PODFILE CHECKSUM: 9d05031d297f5abd3205db3c9ee003129ddba020
 
 COCOAPODS: 1.1.1

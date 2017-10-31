@@ -10,6 +10,9 @@
 		456483954978647D73C01CD8 /* Pods_champcoin_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5692ED4B76FDC8E5AF6705E8 /* Pods_champcoin_demo.framework */; };
 		B91351A81F751021009BE51E /* ForgotpasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91351A71F751020009BE51E /* ForgotpasswordView.swift */; };
 		B91351AA1F7539BD009BE51E /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91351A91F7539BD009BE51E /* NewAccountView.swift */; };
+		B92F3D2C1FA85EF20098C139 /* CountryViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F3D2B1FA85EF20098C139 /* CountryViewTableViewController.swift */; };
+		B92F3D2E1FA876EE0098C139 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F3D2D1FA876EE0098C139 /* CountryTableViewCell.swift */; };
+		B92F3D301FA877BB0098C139 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F3D2F1FA877BA0098C139 /* TableViewHelper.swift */; };
 		C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E5AA91F60C5F500348A51 /* CcApi.swift */; };
 		C63C107E1F665B1C00238D80 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C63C107D1F665B1C00238D80 /* logo.png */; };
 		C63C10801F6666EA00238D80 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63C107F1F6666EA00238D80 /* MainView.swift */; };
@@ -31,6 +34,9 @@
 		6FD939E0D9CC46AC42714DEE /* Pods-champcoin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-champcoin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-champcoin_demo/Pods-champcoin_demo.release.xcconfig"; sourceTree = "<group>"; };
 		B91351A71F751020009BE51E /* ForgotpasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotpasswordView.swift; sourceTree = "<group>"; };
 		B91351A91F7539BD009BE51E /* NewAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
+		B92F3D2B1FA85EF20098C139 /* CountryViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewTableViewController.swift; sourceTree = "<group>"; };
+		B92F3D2D1FA876EE0098C139 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		B92F3D2F1FA877BA0098C139 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
 		C60E5AA91F60C5F500348A51 /* CcApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CcApi.swift; sourceTree = "<group>"; };
 		C63C107D1F665B1C00238D80 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		C63C107F1F6666EA00238D80 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 		C6C6A59B1F5A525500FDF3E4 /* champcoin_demo */ = {
 			isa = PBXGroup;
 			children = (
+				B92F3D2F1FA877BA0098C139 /* TableViewHelper.swift */,
 				C6C6A59C1F5A525500FDF3E4 /* AppDelegate.swift */,
 				C6C6A59E1F5A525500FDF3E4 /* ViewController.swift */,
 				C63C107F1F6666EA00238D80 /* MainView.swift */,
@@ -100,6 +107,8 @@
 				C63C107D1F665B1C00238D80 /* logo.png */,
 				B91351A71F751020009BE51E /* ForgotpasswordView.swift */,
 				B91351A91F7539BD009BE51E /* NewAccountView.swift */,
+				B92F3D2B1FA85EF20098C139 /* CountryViewTableViewController.swift */,
+				B92F3D2D1FA876EE0098C139 /* CountryTableViewCell.swift */,
 			);
 			path = champcoin_demo;
 			sourceTree = "<group>";
@@ -270,10 +279,13 @@
 				C6FAFB171F67DDA000E418EC /* dashBoard.swift in Sources */,
 				B91351A81F751021009BE51E /* ForgotpasswordView.swift in Sources */,
 				C63C10821F66670A00238D80 /* LoginView.swift in Sources */,
+				B92F3D2C1FA85EF20098C139 /* CountryViewTableViewController.swift in Sources */,
 				C63C10841F668ECD00238D80 /* AppNavigationController.swift in Sources */,
 				C60E5AAA1F60C5F500348A51 /* CcApi.swift in Sources */,
 				C6ED26CC1F66CDC7006A4D59 /* HomeTab.swift in Sources */,
 				C6DDD17B1F67F1050082F690 /* DashboardTableViewController.swift in Sources */,
+				B92F3D2E1FA876EE0098C139 /* CountryTableViewCell.swift in Sources */,
+				B92F3D301FA877BB0098C139 /* TableViewHelper.swift in Sources */,
 				C6C6A59D1F5A525500FDF3E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ target 'champcoin_demo' do
 
     pod 'CryptoSwift'
     pod 'Alamofire', '~> 4.4'
-
+    pod 'APESuperHUD', '1.1.2'
     pod 'SwiftIcons', '~> 1.5.1'
     pod 'PasswordTextField'
     pod 'SlideMenuControllerSwift'
